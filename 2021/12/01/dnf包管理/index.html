@@ -6,13 +6,12 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>vmware - 鸭舍</title>
+  <title>dnf包管理 - 鸭舍</title>
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="google" content="notranslate" />
   
-  <meta name="description" content="常见问题VMware Tools灰色网址
-1 、打开虚...">
+  <meta name="description" content="国内源12345678910cd /etc/yum.r...">
   <meta name="author" content="张一格">
   <link rel="icon" href="/zyg.github.io//images/icons/favicon-16x16.png" type="image/png" sizes="16x16">
   <link rel="icon" href="/zyg.github.io//images/icons/favicon-32x32.png" type="image/png" sizes="32x32">
@@ -155,7 +154,7 @@
         <i class="iconfont iconsearch j-navbar-search"></i>
       
     </div>
-    <div class="center">vmware</div>
+    <div class="center">dnf包管理</div>
     <div class="right">
       <i class="iconfont iconmenu j-navbar-menu"></i>
     </div>
@@ -197,31 +196,24 @@
       <div class="col-xl-6"><article class="article">
   <div class="wrap">
     <section class="head">
-  <img   class="lazyload" data-original="/zyg.github.io/images/theme/19.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  draggable="false">
+  <img   class="lazyload" data-original="/zyg.github.io/images/theme/6.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  draggable="false">
   <div class="head-mask">
-    <h1 class="head-title">vmware</h1>
+    <h1 class="head-title">dnf包管理</h1>
     <div class="head-info">
-      <span class="post-info-item"><i class="iconfont iconcalendar"></i>十一月 24, 2021</span>
+      <span class="post-info-item"><i class="iconfont iconcalendar"></i>十二月 01, 2021</span>
       
-      <span class="post-info-item"><i class="iconfont iconfont-size"></i>411</span>
+      <span class="post-info-item"><i class="iconfont iconfont-size"></i>1403</span>
     </div>
   </div>
 </section>
     <section class="main">
       <section class="content">
         
-        <h1 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h1><h5 id="VMware-Tools灰色"><a href="#VMware-Tools灰色" class="headerlink" title="VMware Tools灰色"></a>VMware Tools灰色</h5><p><a target="_blank" rel="noopener" href="https://www.php.cn/faq/454454.html">网址</a></p>
-<p>1 、打开虚拟机，依次点击虚拟机、设置</p>
-<p>2、点击【添加】，选择“CD/DVD驱动器”，点击【完成】；</p>
-<p>3、选择刚才添加的“新CD/DVD驱动器”，勾选”使用IOS映象文件”，点击“浏览”，<strong>找到虚拟机安装目录，找到linux.iso文件并选择</strong>，点击“打开”，最后点击【确定】即可；</p>
-<p>完成之后，系统桌面就会显示像光驱一样的圆形“Vmware Tools”图标，双击它就出现你想要的文件了</p>
-<h5 id="Windows与linux虚拟机共享文件夹教程"><a href="#Windows与linux虚拟机共享文件夹教程" class="headerlink" title="Windows与linux虚拟机共享文件夹教程"></a>Windows与linux虚拟机共享文件夹教程</h5><h5 id="网址"><a href="#网址" class="headerlink" title="网址"></a><a target="_blank" rel="noopener" href="https://blog.csdn.net/xiao_bai_9527/article/details/79201150">网址</a></h5><p>1.打开虚拟机界面，并启动linux</p>
-<p>2.选中上方功能栏中的虚拟机，选中设置</p>
-<p>3.在选项里选择<code>共享文件夹</code>，右边选择<code>总是启用</code>，添加文件夹路径，确定</p>
-<p>4.进入虚拟机 解压</p>
-<figure class="highlight gams"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs gams"><span class="hljs-function"><span class="hljs-title">tar</span></span> -xzvf VmwareTools-......<br>sudo su<br>sudo ./vmware-install.pl<br>一路<span class="hljs-keyword">yes</span><br></code></pre></td></tr></table></figure>
+        <h6 id="国内源"><a href="#国内源" class="headerlink" title="国内源"></a>国内源</h6><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs shell">cd /etc/yum.repos.d<br>wget http://mirrors.163.com/.help/fedora-163.repo<br>wget http://mirrors.163.com/.help/fedora-updates-163.repo<br>wget http://mirrors.sohu.com/help/fedora-sohu.repo<br>wget http://mirrors.sohu.com/help/fedora-updates-sohu.repo<br>wget http://lug.ustc.edu.cn/wiki/_export/code/mirrors/help/fedora?codeblock=0<br>wget http://lug.ustc.edu.cn/wiki/_export/code/mirrors/help/fedora?codeblock=1<br>wget http://mirrors.yun-idc.com/fedora-cds.repo<br>wget http://mirrors.yun-idc.com/fedora-updates-cds.repo<br>dnf makecache  (更新缓存)<br></code></pre></td></tr></table></figure>
 
-<p>在/mnt/hgfs/下查看共享文件</p>
+<h6 id="查看系统中可用的-DNF-软件库"><a href="#查看系统中可用的-DNF-软件库" class="headerlink" title="查看系统中可用的 DNF 软件库"></a>查看系统中可用的 DNF 软件库</h6><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><code class="hljs shell">dnf repolist<br><span class="hljs-meta">#</span><span class="bash">查看系统中可用和不可用的所有的 DNF 软件库</span><br>dnf repolist all<br><span class="hljs-meta">#</span><span class="bash">列出所有 RPM 包</span><br>dnf list<br><span class="hljs-meta">#</span><span class="bash">列出所有安装了的 RPM 包</span><br>dnf list installed<br><span class="hljs-meta">#</span><span class="bash">列出所有可供安装的 RPM 包</span><br>dnf list available<br><span class="hljs-meta">#</span><span class="bash">搜索软件库中的 RPM 包</span><br>dnf search nano<br><span class="hljs-meta">#</span><span class="bash">查找某一文件的提供者</span><br>dnf provides /bin/bash<br><span class="hljs-meta">#</span><span class="bash">查看软件包详情</span><br>dnf info nano<br><span class="hljs-meta">#</span><span class="bash">安装软件包</span><br>dnf install nano<br><span class="hljs-meta">#</span><span class="bash">升级软件包</span><br>dnf update systemd<br><span class="hljs-meta">#</span><span class="bash">检查系统软件包的更新</span><br>dnf check-update<br><span class="hljs-meta">#</span><span class="bash">升级所有系统软件包</span><br>dnf update <br>dnf upgrade<br><span class="hljs-meta">#</span><span class="bash">删除软件包</span><br>dnf remove nano<br>dnf erase nano<br><span class="hljs-meta">#</span><span class="bash">删除无用孤立的软件包</span><br>dnf autoremove<br><span class="hljs-meta">#</span><span class="bash">删除缓存的无用软件包</span><br>dnf clean all<br><span class="hljs-meta">#</span><span class="bash">获取有关某条命令的使用帮助</span><br>dnf help clean<br>dnf history<br><span class="hljs-meta"></span><br><span class="hljs-meta">#</span><span class="bash">查看所有的软件包组</span><br>dnf grouplist<br><span class="hljs-meta">#</span><span class="bash">安装一个软件包组</span><br>dnf groupinstall ‘Educational Software’<br><span class="hljs-meta">#</span><span class="bash">升级一个软件包组中的软件包</span><br>dnf groupupdate ‘Educational Software’<br><span class="hljs-meta">#</span><span class="bash">删除一个软件包组</span><br>dnf groupremove ‘Educational Software’<br><span class="hljs-meta">#</span><span class="bash">从特定的软件包库安装特定的软件</span><br>dnf –enablerepo=epel install phpmyadmin<br><span class="hljs-meta">#</span><span class="bash">更新软件包到最新的稳定发行版</span><br>dnf distro-sync<br><span class="hljs-meta">#</span><span class="bash">重新安装特定软件包</span><br>dnf reinstall nano<br><span class="hljs-meta">#</span><span class="bash">回滚某个特定软件的版本</span><br>dnf downgrade acpid<br><br></code></pre></td></tr></table></figure>
+
+
 
       </section>
       <section class="extra">
@@ -229,7 +221,7 @@
           <ul class="copyright">
   
     <li><strong>本文作者：</strong>张一格</li>
-    <li><strong>本文链接：</strong><a href="https://zhangyige8848.github.io/zyg.github.io/2021/11/24/vmware/index.html" title="https:&#x2F;&#x2F;zhangyige8848.github.io&#x2F;zyg.github.io&#x2F;2021&#x2F;11&#x2F;24&#x2F;vmware&#x2F;index.html">https:&#x2F;&#x2F;zhangyige8848.github.io&#x2F;zyg.github.io&#x2F;2021&#x2F;11&#x2F;24&#x2F;vmware&#x2F;index.html</a></li>
+    <li><strong>本文链接：</strong><a href="https://zhangyige8848.github.io/zyg.github.io/2021/12/01/dnf%E5%8C%85%E7%AE%A1%E7%90%86/index.html" title="https:&#x2F;&#x2F;zhangyige8848.github.io&#x2F;zyg.github.io&#x2F;2021&#x2F;12&#x2F;01&#x2F;dnf%E5%8C%85%E7%AE%A1%E7%90%86&#x2F;index.html">https:&#x2F;&#x2F;zhangyige8848.github.io&#x2F;zyg.github.io&#x2F;2021&#x2F;12&#x2F;01&#x2F;dnf%E5%8C%85%E7%AE%A1%E7%90%86&#x2F;index.html</a></li>
     <li><strong>版权声明：</strong>本博客所有文章均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" title="BY-NC-SA" target="_blank" rel="noopener">BY-NC-SA</a> 许可协议，转载请注明出处！</li>
   
 </ul>
@@ -248,8 +240,8 @@
         
         
   <nav class="nav">
-    <a href="/zyg.github.io/2021/12/01/fedora%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/"><i class="iconfont iconleft"></i>fedora基础操作</a>
-    <a></a>
+    <a href="/zyg.github.io/2021/12/01/%E8%BF%B7%E9%9B%BE%E9%80%9Alinux%E5%AE%89%E8%A3%85/"><i class="iconfont iconleft"></i>迷雾通linux安装</a>
+    <a href="/zyg.github.io/2021/12/01/hexo/">hexo<i class="iconfont iconright"></i></a>
   </nav>
 
       </section>
@@ -262,7 +254,7 @@
           
   <aside class="toc-wrap">
     <h3 class="toc-title">文章目录：</h3>
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98"><span class="toc-text">常见问题</span></a></li></ol>
+    
   </aside>
 
         

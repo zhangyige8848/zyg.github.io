@@ -6,13 +6,12 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>vmware - 鸭舍</title>
+  <title>fedora基础操作 - 鸭舍</title>
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="google" content="notranslate" />
   
-  <meta name="description" content="常见问题VMware Tools灰色网址
-1 、打开虚...">
+  <meta name="description" content="使用汉语输入法super+空格  super 就是 w...">
   <meta name="author" content="张一格">
   <link rel="icon" href="/zyg.github.io//images/icons/favicon-16x16.png" type="image/png" sizes="16x16">
   <link rel="icon" href="/zyg.github.io//images/icons/favicon-32x32.png" type="image/png" sizes="32x32">
@@ -155,7 +154,7 @@
         <i class="iconfont iconsearch j-navbar-search"></i>
       
     </div>
-    <div class="center">vmware</div>
+    <div class="center">fedora基础操作</div>
     <div class="right">
       <i class="iconfont iconmenu j-navbar-menu"></i>
     </div>
@@ -197,31 +196,49 @@
       <div class="col-xl-6"><article class="article">
   <div class="wrap">
     <section class="head">
-  <img   class="lazyload" data-original="/zyg.github.io/images/theme/19.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  draggable="false">
+  <img   class="lazyload" data-original="/zyg.github.io/images/theme/16.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  draggable="false">
   <div class="head-mask">
-    <h1 class="head-title">vmware</h1>
+    <h1 class="head-title">fedora基础操作</h1>
     <div class="head-info">
-      <span class="post-info-item"><i class="iconfont iconcalendar"></i>十一月 24, 2021</span>
+      <span class="post-info-item"><i class="iconfont iconcalendar"></i>十二月 01, 2021</span>
       
-      <span class="post-info-item"><i class="iconfont iconfont-size"></i>411</span>
+      <span class="post-info-item"><i class="iconfont iconfont-size"></i>1122</span>
     </div>
   </div>
 </section>
     <section class="main">
       <section class="content">
         
-        <h1 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h1><h5 id="VMware-Tools灰色"><a href="#VMware-Tools灰色" class="headerlink" title="VMware Tools灰色"></a>VMware Tools灰色</h5><p><a target="_blank" rel="noopener" href="https://www.php.cn/faq/454454.html">网址</a></p>
-<p>1 、打开虚拟机，依次点击虚拟机、设置</p>
-<p>2、点击【添加】，选择“CD/DVD驱动器”，点击【完成】；</p>
-<p>3、选择刚才添加的“新CD/DVD驱动器”，勾选”使用IOS映象文件”，点击“浏览”，<strong>找到虚拟机安装目录，找到linux.iso文件并选择</strong>，点击“打开”，最后点击【确定】即可；</p>
-<p>完成之后，系统桌面就会显示像光驱一样的圆形“Vmware Tools”图标，双击它就出现你想要的文件了</p>
-<h5 id="Windows与linux虚拟机共享文件夹教程"><a href="#Windows与linux虚拟机共享文件夹教程" class="headerlink" title="Windows与linux虚拟机共享文件夹教程"></a>Windows与linux虚拟机共享文件夹教程</h5><h5 id="网址"><a href="#网址" class="headerlink" title="网址"></a><a target="_blank" rel="noopener" href="https://blog.csdn.net/xiao_bai_9527/article/details/79201150">网址</a></h5><p>1.打开虚拟机界面，并启动linux</p>
-<p>2.选中上方功能栏中的虚拟机，选中设置</p>
-<p>3.在选项里选择<code>共享文件夹</code>，右边选择<code>总是启用</code>，添加文件夹路径，确定</p>
-<p>4.进入虚拟机 解压</p>
-<figure class="highlight gams"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs gams"><span class="hljs-function"><span class="hljs-title">tar</span></span> -xzvf VmwareTools-......<br>sudo su<br>sudo ./vmware-install.pl<br>一路<span class="hljs-keyword">yes</span><br></code></pre></td></tr></table></figure>
+        <h6 id="使用汉语输入法"><a href="#使用汉语输入法" class="headerlink" title="使用汉语输入法"></a>使用汉语输入法</h6><p>super+空格  super 就是 windows键</p>
+<h6 id="创建快捷方式"><a href="#创建快捷方式" class="headerlink" title="创建快捷方式"></a>创建快捷方式</h6><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell">cd /usr/share/applications<br>touch gephgui4.desktop  <br></code></pre></td></tr></table></figure>
 
-<p>在/mnt/hgfs/下查看共享文件</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs shell">[Desktop Entry]<br>Encoding=UTF-8<br>Name=gephgui4<br>Comment=gephgui4<br>Exec=/home/zyg/soft/install/geph-linux64-4.4.20/gephgui4 --no-sandbox<br>Categories=Application;Development;Java;IDE<br>Version=1.0<br>Type=Application<br>Terminal=0<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs ini"><span class="hljs-section">[Desktop Entry]</span><br><br><span class="hljs-attr">Name</span>=eclipse <span class="hljs-comment">#将来图标的名字</span><br><br><span class="hljs-attr">Comment</span>=java开发 <span class="hljs-comment">#鼠标指示的提示语</span><br><br><span class="hljs-attr">Exec</span>=/opt/eclipse/eclipse <span class="hljs-comment">#在bash下的启动方式，即可执行程序的路径</span><br><br><span class="hljs-attr">Icon</span>=/opt/eclipse/icon.xpm <span class="hljs-comment">#图标的定义</span><br><br><span class="hljs-attr">Terminal</span>=<span class="hljs-literal">false</span> <span class="hljs-comment">#是否在终端运行</span><br><br><span class="hljs-attr">Type</span>=Application <span class="hljs-comment">#类型应用</span><br><br><span class="hljs-attr">Categories</span>=Application<span class="hljs-comment">;Development; #application下的编程所属类别</span><br></code></pre></td></tr></table></figure>
+
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs nginx"><span class="hljs-attribute">chmod755</span> typora.desktop   <br>找不见是因为分类，搜索一下拖进来就行了<br></code></pre></td></tr></table></figure>
+
+<h6 id="创建软连接"><a href="#创建软连接" class="headerlink" title="创建软连接"></a>创建软连接</h6><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs css">ln -s <span class="hljs-selector-attr">[源文件或者目录]</span>  <span class="hljs-selector-attr">[目标文件或者目录]</span><br></code></pre></td></tr></table></figure>
+
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs css">ln -snf <span class="hljs-selector-attr">[源文件或者目录]</span>  <span class="hljs-selector-attr">[目标文件或者目录]</span> 修改软连接<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs diff">常用参数：<br><span class="hljs-deletion">-b 删除，覆盖以前建立的链接</span><br><span class="hljs-deletion">-d允许超级用户制作目录的硬链接</span><br><span class="hljs-deletion">-f强制执行</span><br><span class="hljs-deletion">-i交互模式，文件存在则提示用户是否覆盖。</span><br><span class="hljs-deletion">-n把符号链接视为一般目录</span><br><span class="hljs-deletion">-s软连接 </span><br><span class="hljs-deletion">-v显示详细的处理过程</span><br></code></pre></td></tr></table></figure>
+
+<blockquote>
+<h3 id="软连接与环境变量"><a href="#软连接与环境变量" class="headerlink" title="软连接与环境变量"></a>软连接与环境变量</h3></blockquote>
+<p>1、 环境变量在linux中，就是在将<strong>指定目录</strong>的路径添加到<strong>path变量中</strong></p>
+<p>执行命令时去指定的文件夹中查找相应的程序并执行。</p>
+<p>我们需要打开/etc/profile文件，并将如下代码添加进去：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">export</span> PATH=/directory:<span class="hljs-variable">$PATH</span>   //directory为可执行程序所在的目录。<br></code></pre></td></tr></table></figure>
+
+<p>然后再执行source /etc/profile  才能生效。</p>
+<p>查看设置的 环境变量 </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">echo</span> <span class="hljs-variable">$PATH</span><br></code></pre></td></tr></table></figure>
+
+<p>问题：设置非常多的环境变量。这么一来，系统的性能便会降低。因为，当执行命令的时候系统会遍历非常多的文件夹</p>
+<p>2.使用 软连接</p>
+<p>将软件的可执行程序<strong>建立一个软连</strong>接直接<strong>放到path指定的目录中</strong></p>
+<p>使用绝对路径</p>
 
       </section>
       <section class="extra">
@@ -229,7 +246,7 @@
           <ul class="copyright">
   
     <li><strong>本文作者：</strong>张一格</li>
-    <li><strong>本文链接：</strong><a href="https://zhangyige8848.github.io/zyg.github.io/2021/11/24/vmware/index.html" title="https:&#x2F;&#x2F;zhangyige8848.github.io&#x2F;zyg.github.io&#x2F;2021&#x2F;11&#x2F;24&#x2F;vmware&#x2F;index.html">https:&#x2F;&#x2F;zhangyige8848.github.io&#x2F;zyg.github.io&#x2F;2021&#x2F;11&#x2F;24&#x2F;vmware&#x2F;index.html</a></li>
+    <li><strong>本文链接：</strong><a href="https://zhangyige8848.github.io/zyg.github.io/2021/12/01/fedora%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/index.html" title="https:&#x2F;&#x2F;zhangyige8848.github.io&#x2F;zyg.github.io&#x2F;2021&#x2F;12&#x2F;01&#x2F;fedora%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C&#x2F;index.html">https:&#x2F;&#x2F;zhangyige8848.github.io&#x2F;zyg.github.io&#x2F;2021&#x2F;12&#x2F;01&#x2F;fedora%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C&#x2F;index.html</a></li>
     <li><strong>版权声明：</strong>本博客所有文章均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" title="BY-NC-SA" target="_blank" rel="noopener">BY-NC-SA</a> 许可协议，转载请注明出处！</li>
   
 </ul>
@@ -248,8 +265,8 @@
         
         
   <nav class="nav">
-    <a href="/zyg.github.io/2021/12/01/fedora%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/"><i class="iconfont iconleft"></i>fedora基础操作</a>
-    <a></a>
+    <a href="/zyg.github.io/2021/12/01/hexo/"><i class="iconfont iconleft"></i>hexo</a>
+    <a href="/zyg.github.io/2021/11/24/vmware/">vmware<i class="iconfont iconright"></i></a>
   </nav>
 
       </section>
@@ -262,7 +279,7 @@
           
   <aside class="toc-wrap">
     <h3 class="toc-title">文章目录：</h3>
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98"><span class="toc-text">常见问题</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BD%AF%E8%BF%9E%E6%8E%A5%E4%B8%8E%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F"><span class="toc-text">软连接与环境变量</span></a></li></ol>
   </aside>
 
         

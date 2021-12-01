@@ -1,28 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>article title</title>
-    <url>/zyg.github.io/2021/11/24/article-title/</url>
-    <content><![CDATA[<p> 我爱小黄鸭 我爱小黄鸭 我爱小黄鸭 我爱小黄鸭 我爱小黄鸭</p>
+    <title>dnf包管理</title>
+    <url>/zyg.github.io/2021/12/01/dnf%E5%8C%85%E7%AE%A1%E7%90%86/</url>
+    <content><![CDATA[<h6 id="国内源"><a href="#国内源" class="headerlink" title="国内源"></a>国内源</h6><figure class="highlight shell"><table><tr><td class="code"><pre><code class="hljs shell">cd /etc/yum.repos.d<br>wget http://mirrors.163.com/.help/fedora-163.repo<br>wget http://mirrors.163.com/.help/fedora-updates-163.repo<br>wget http://mirrors.sohu.com/help/fedora-sohu.repo<br>wget http://mirrors.sohu.com/help/fedora-updates-sohu.repo<br>wget http://lug.ustc.edu.cn/wiki/_export/code/mirrors/help/fedora?codeblock=0<br>wget http://lug.ustc.edu.cn/wiki/_export/code/mirrors/help/fedora?codeblock=1<br>wget http://mirrors.yun-idc.com/fedora-cds.repo<br>wget http://mirrors.yun-idc.com/fedora-updates-cds.repo<br>dnf makecache  (更新缓存)<br></code></pre></td></tr></table></figure>
+
+<h6 id="查看系统中可用的-DNF-软件库"><a href="#查看系统中可用的-DNF-软件库" class="headerlink" title="查看系统中可用的 DNF 软件库"></a>查看系统中可用的 DNF 软件库</h6><figure class="highlight shell"><table><tr><td class="code"><pre><code class="hljs shell">dnf repolist<br><span class="hljs-meta">#</span><span class="bash">查看系统中可用和不可用的所有的 DNF 软件库</span><br>dnf repolist all<br><span class="hljs-meta">#</span><span class="bash">列出所有 RPM 包</span><br>dnf list<br><span class="hljs-meta">#</span><span class="bash">列出所有安装了的 RPM 包</span><br>dnf list installed<br><span class="hljs-meta">#</span><span class="bash">列出所有可供安装的 RPM 包</span><br>dnf list available<br><span class="hljs-meta">#</span><span class="bash">搜索软件库中的 RPM 包</span><br>dnf search nano<br><span class="hljs-meta">#</span><span class="bash">查找某一文件的提供者</span><br>dnf provides /bin/bash<br><span class="hljs-meta">#</span><span class="bash">查看软件包详情</span><br>dnf info nano<br><span class="hljs-meta">#</span><span class="bash">安装软件包</span><br>dnf install nano<br><span class="hljs-meta">#</span><span class="bash">升级软件包</span><br>dnf update systemd<br><span class="hljs-meta">#</span><span class="bash">检查系统软件包的更新</span><br>dnf check-update<br><span class="hljs-meta">#</span><span class="bash">升级所有系统软件包</span><br>dnf update <br>dnf upgrade<br><span class="hljs-meta">#</span><span class="bash">删除软件包</span><br>dnf remove nano<br>dnf erase nano<br><span class="hljs-meta">#</span><span class="bash">删除无用孤立的软件包</span><br>dnf autoremove<br><span class="hljs-meta">#</span><span class="bash">删除缓存的无用软件包</span><br>dnf clean all<br><span class="hljs-meta">#</span><span class="bash">获取有关某条命令的使用帮助</span><br>dnf help clean<br>dnf history<br><span class="hljs-meta"></span><br><span class="hljs-meta">#</span><span class="bash">查看所有的软件包组</span><br>dnf grouplist<br><span class="hljs-meta">#</span><span class="bash">安装一个软件包组</span><br>dnf groupinstall ‘Educational Software’<br><span class="hljs-meta">#</span><span class="bash">升级一个软件包组中的软件包</span><br>dnf groupupdate ‘Educational Software’<br><span class="hljs-meta">#</span><span class="bash">删除一个软件包组</span><br>dnf groupremove ‘Educational Software’<br><span class="hljs-meta">#</span><span class="bash">从特定的软件包库安装特定的软件</span><br>dnf –enablerepo=epel install phpmyadmin<br><span class="hljs-meta">#</span><span class="bash">更新软件包到最新的稳定发行版</span><br>dnf distro-sync<br><span class="hljs-meta">#</span><span class="bash">重新安装特定软件包</span><br>dnf reinstall nano<br><span class="hljs-meta">#</span><span class="bash">回滚某个特定软件的版本</span><br>dnf downgrade acpid<br><br></code></pre></td></tr></table></figure>
+
+
 ]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/zyg.github.io/2021/11/24/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure>
+    <title>fedora基础操作</title>
+    <url>/zyg.github.io/2021/12/01/fedora%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/</url>
+    <content><![CDATA[<h6 id="使用汉语输入法"><a href="#使用汉语输入法" class="headerlink" title="使用汉语输入法"></a>使用汉语输入法</h6><p>super+空格  super 就是 windows键</p>
+<h6 id="创建快捷方式"><a href="#创建快捷方式" class="headerlink" title="创建快捷方式"></a>创建快捷方式</h6><figure class="highlight shell"><table><tr><td class="code"><pre><code class="hljs shell">cd /usr/share/applications<br>touch gephgui4.desktop  <br></code></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><code class="hljs shell">[Desktop Entry]<br>Encoding=UTF-8<br>Name=gephgui4<br>Comment=gephgui4<br>Exec=/home/zyg/soft/install/geph-linux64-4.4.20/gephgui4 --no-sandbox<br>Categories=Application;Development;Java;IDE<br>Version=1.0<br>Type=Application<br>Terminal=0<br></code></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure>
+<figure class="highlight ini"><table><tr><td class="code"><pre><code class="hljs ini"><span class="hljs-section">[Desktop Entry]</span><br><br><span class="hljs-attr">Name</span>=eclipse <span class="hljs-comment">#将来图标的名字</span><br><br><span class="hljs-attr">Comment</span>=java开发 <span class="hljs-comment">#鼠标指示的提示语</span><br><br><span class="hljs-attr">Exec</span>=/opt/eclipse/eclipse <span class="hljs-comment">#在bash下的启动方式，即可执行程序的路径</span><br><br><span class="hljs-attr">Icon</span>=/opt/eclipse/icon.xpm <span class="hljs-comment">#图标的定义</span><br><br><span class="hljs-attr">Terminal</span>=<span class="hljs-literal">false</span> <span class="hljs-comment">#是否在终端运行</span><br><br><span class="hljs-attr">Type</span>=Application <span class="hljs-comment">#类型应用</span><br><br><span class="hljs-attr">Categories</span>=Application<span class="hljs-comment">;Development; #application下的编程所属类别</span><br></code></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure>
+<figure class="highlight nginx"><table><tr><td class="code"><pre><code class="hljs nginx"><span class="hljs-attribute">chmod755</span> typora.desktop   <br>找不见是因为分类，搜索一下拖进来就行了<br></code></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h6 id="创建软连接"><a href="#创建软连接" class="headerlink" title="创建软连接"></a>创建软连接</h6><figure class="highlight css"><table><tr><td class="code"><pre><code class="hljs css">ln -s <span class="hljs-selector-attr">[源文件或者目录]</span>  <span class="hljs-selector-attr">[目标文件或者目录]</span><br></code></pre></td></tr></table></figure>
+
+<figure class="highlight css"><table><tr><td class="code"><pre><code class="hljs css">ln -snf <span class="hljs-selector-attr">[源文件或者目录]</span>  <span class="hljs-selector-attr">[目标文件或者目录]</span> 修改软连接<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight diff"><table><tr><td class="code"><pre><code class="hljs diff">常用参数：<br><span class="hljs-deletion">-b 删除，覆盖以前建立的链接</span><br><span class="hljs-deletion">-d允许超级用户制作目录的硬链接</span><br><span class="hljs-deletion">-f强制执行</span><br><span class="hljs-deletion">-i交互模式，文件存在则提示用户是否覆盖。</span><br><span class="hljs-deletion">-n把符号链接视为一般目录</span><br><span class="hljs-deletion">-s软连接 </span><br><span class="hljs-deletion">-v显示详细的处理过程</span><br></code></pre></td></tr></table></figure>
+
+<blockquote>
+<h3 id="软连接与环境变量"><a href="#软连接与环境变量" class="headerlink" title="软连接与环境变量"></a>软连接与环境变量</h3></blockquote>
+<p>1、 环境变量在linux中，就是在将<strong>指定目录</strong>的路径添加到<strong>path变量中</strong></p>
+<p>执行命令时去指定的文件夹中查找相应的程序并执行。</p>
+<p>我们需要打开/etc/profile文件，并将如下代码添加进去：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">export</span> PATH=/directory:<span class="hljs-variable">$PATH</span>   //directory为可执行程序所在的目录。<br></code></pre></td></tr></table></figure>
+
+<p>然后再执行source /etc/profile  才能生效。</p>
+<p>查看设置的 环境变量 </p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">echo</span> <span class="hljs-variable">$PATH</span><br></code></pre></td></tr></table></figure>
+
+<p>问题：设置非常多的环境变量。这么一来，系统的性能便会降低。因为，当执行命令的时候系统会遍历非常多的文件夹</p>
+<p>2.使用 软连接</p>
+<p>将软件的可执行程序<strong>建立一个软连</strong>接直接<strong>放到path指定的目录中</strong></p>
+<p>使用绝对路径</p>
 ]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>hexo</title>
+    <url>/zyg.github.io/2021/12/01/hexo/</url>
+    <content><![CDATA[<h6 id="hexo安装"><a href="#hexo安装" class="headerlink" title="hexo安装"></a>hexo安装</h6><figure class="highlight shell"><table><tr><td class="code"><pre><code class="hljs shell">npm i hexo-cli -g<br>hexo -v <br><span class="hljs-meta">#</span><span class="bash">如果命令找不到 去/etc/profix 将node 添加为环境变量</span><br>hexo init<br>hexo install<br>hexo g #安装<br>hexo s #本地预览<br>hexo d #发布<br></code></pre></td></tr></table></figure>
+
+<h6 id="更改theme"><a href="#更改theme" class="headerlink" title="更改theme"></a>更改theme</h6><p>先下载主题库，格式 themes/example</p>
+<p>放到自己项目hexo init后的 themes文件夹下面</p>
+<h5 id="遇到问题"><a href="#遇到问题" class="headerlink" title="遇到问题"></a>遇到问题</h5><h6 id="验证失败"><a href="#验证失败" class="headerlink" title="验证失败"></a>验证失败</h6><p>github已经不支持http链接 用户名密码登录推送了。现在得用ssh链接</p>
+<h6 id="main分支是代码，master分支是部署文件"><a href="#main分支是代码，master分支是部署文件" class="headerlink" title="main分支是代码，master分支是部署文件"></a>main分支是代码，master分支是部署文件</h6><h6 id="deploy-git-是生成的静态代码"><a href="#deploy-git-是生成的静态代码" class="headerlink" title=".deploy_git 是生成的静态代码"></a>.deploy_git 是生成的静态代码</h6><p>_config.yml</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">url:</span> <span class="hljs-string">要配置自己的发布地址，要不然找不到css404</span> <span class="hljs-string">相对路径问题</span><br></code></pre></td></tr></table></figure>
+
+
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
   </entry>
   <entry>
     <title>vmware</title>
@@ -40,5 +84,36 @@
 
 <p>在/mnt/hgfs/下查看共享文件</p>
 ]]></content>
+      <categories>
+        <category>系统工具</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>开发环境安装</title>
+    <url>/zyg.github.io/2021/12/01/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<h6 id="java配置环境变量"><a href="#java配置环境变量" class="headerlink" title="java配置环境变量"></a>java配置环境变量</h6><p>·用文本编辑器打开/etc/profile<br>·在profile文件末尾加入：</p>
+<figure class="highlight routeros"><table><tr><td class="code"><pre><code class="hljs routeros"><span class="hljs-builtin-name">export</span> <span class="hljs-attribute">JAVA_HOME</span>=/usr/share/jdk1.6.0_14<br><span class="hljs-builtin-name">export</span> <span class="hljs-attribute">PATH</span>=<span class="hljs-variable">$JAVA_HOME</span>/bin:$PATH<br><span class="hljs-builtin-name">export</span> <span class="hljs-attribute">CLASSPATH</span>=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight vim"><table><tr><td class="code"><pre><code class="hljs vim"><span class="hljs-keyword">source</span> <span class="hljs-keyword">profile</span><br>java -<span class="hljs-keyword">version</span><br></code></pre></td></tr></table></figure>
+
+<p>切换用户后还得source</p>
+<h5 id="node"><a href="#node" class="headerlink" title="node"></a>node</h5><h6 id="nodejs配置软连接"><a href="#nodejs配置软连接" class="headerlink" title="nodejs配置软连接"></a>nodejs配置软连接</h6><figure class="highlight shell"><table><tr><td class="code"><pre><code class="hljs shell">ln -s [安装路径]/bin/npm /usr/local/bin/<br>ln -s [安装路径]/bin/node /usr/local/bin/<br>node -v<br>npm -v<br></code></pre></td></tr></table></figure>
+
+<h6 id="nodejs配置代理-没成功"><a href="#nodejs配置代理-没成功" class="headerlink" title="nodejs配置代理(没成功)"></a>nodejs配置代理(没成功)</h6><figure class="highlight shell"><table><tr><td class="code"><pre><code class="hljs shell"><br></code></pre></td></tr></table></figure>
+
+
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>迷雾通linux安装</title>
+    <url>/zyg.github.io/2021/12/01/%E8%BF%B7%E9%9B%BE%E9%80%9Alinux%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<p>./RUN-ME.sh</p>
+]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
   </entry>
 </search>

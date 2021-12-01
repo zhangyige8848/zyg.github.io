@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>article title</title>
+    <url>/zyg.github.io/2021/11/24/article-title/</url>
+    <content><![CDATA[<p> 我爱小黄鸭 我爱小黄鸭 我爱小黄鸭 我爱小黄鸭 我爱小黄鸭</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/zyg.github.io/2021/11/24/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>vmware</title>
+    <url>/zyg.github.io/2021/11/24/vmware/</url>
+    <content><![CDATA[<h1 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h1><h5 id="VMware-Tools灰色"><a href="#VMware-Tools灰色" class="headerlink" title="VMware Tools灰色"></a>VMware Tools灰色</h5><p><a href="https://www.php.cn/faq/454454.html">网址</a></p>
+<p>1 、打开虚拟机，依次点击虚拟机、设置</p>
+<p>2、点击【添加】，选择“CD/DVD驱动器”，点击【完成】；</p>
+<p>3、选择刚才添加的“新CD/DVD驱动器”，勾选”使用IOS映象文件”，点击“浏览”，<strong>找到虚拟机安装目录，找到linux.iso文件并选择</strong>，点击“打开”，最后点击【确定】即可；</p>
+<p>完成之后，系统桌面就会显示像光驱一样的圆形“Vmware Tools”图标，双击它就出现你想要的文件了</p>
+<h5 id="Windows与linux虚拟机共享文件夹教程"><a href="#Windows与linux虚拟机共享文件夹教程" class="headerlink" title="Windows与linux虚拟机共享文件夹教程"></a>Windows与linux虚拟机共享文件夹教程</h5><h5 id="网址"><a href="#网址" class="headerlink" title="网址"></a><a href="https://blog.csdn.net/xiao_bai_9527/article/details/79201150">网址</a></h5><p>1.打开虚拟机界面，并启动linux</p>
+<p>2.选中上方功能栏中的虚拟机，选中设置</p>
+<p>3.在选项里选择<code>共享文件夹</code>，右边选择<code>总是启用</code>，添加文件夹路径，确定</p>
+<p>4.进入虚拟机 解压</p>
+<figure class="highlight gams"><table><tr><td class="code"><pre><code class="hljs gams"><span class="hljs-function"><span class="hljs-title">tar</span></span> -xzvf VmwareTools-......<br>sudo su<br>sudo ./vmware-install.pl<br>一路<span class="hljs-keyword">yes</span><br></code></pre></td></tr></table></figure>
+
+<p>在/mnt/hgfs/下查看共享文件</p>
+]]></content>
+  </entry>
+</search>
